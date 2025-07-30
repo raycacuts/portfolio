@@ -1,38 +1,259 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    scroll-behavior: smooth;
+    color: #ffffff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+.profile-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-text {
+    flex: 3;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-family: 'Playfair Display', serif; /* looks elegant */
+    color: #f5f5f5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile-contact {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    .profile-contact a {
+        color: #4da6ff;
+        text-decoration: none;
+    }
+
+        .profile-contact a:hover {
+            text-decoration: underline;
+        }
+    .profile-contact p {
+        display: flex; /* put label + link side by side */
+        gap: 6px; /* small spacing between them */
+        margin: 5px 0;
+        white-space: nowrap; /* prevent breaking into multiple lines */
+    }
+
+    .profile-contact strong {
+        min-width: 60px; /* keep labels aligned */
+    }
+
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #121212;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    z-index: 1000;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+    font-size: 2.2rem;
+    color: #ffffff; /* white */
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search {
+    display: flex;
+    margin-right: 40px; /* pushes the form a bit left */
 }
+
+    .search input {
+        width: 200px; /* make input smaller if needed */
+        padding: 0.5rem;
+        border: none;
+        background: #2a2a2a;
+        color: #ffffff;
+        border-radius: 4px 0 0 4px;
+    }
+
+    .search button {
+        padding: 0.5rem 1rem;
+        border: none;
+        background: #444;
+        color: #fff;
+        border-radius: 0 4px 4px 0;
+    }
+
+        .search button:hover {
+            background: #1a73e8;
+        }
+
+.section {
+    background: #121212;
+    padding: 10rem 2rem 6rem 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+}
+
+    .section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: #ffffff; /* white */
+        text-align: center;
+    }
+
+.subsection {
+    background: #1e1e1e;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+    .subsection h3 {
+        color: #ffffff; /* white instead of blue */
+        font-size: 1.6rem;
+    }
+
+    .subsection .date {
+        font-size: 0.9rem;
+        color: #cccccc;
+        margin-bottom: 0.5rem;
+    }
+
+/* Media Layout */
+.media-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+    .media-layout .text {
+        flex: 1 1 55%;
+    }
+
+.media-group {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.media {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+/* Links */
+a {
+    color: #4da6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+.text a {
+    display: block; /* each link takes full line */
+    margin-top: 8px; /* spacing between links */
+    color: #007bff; /* make links look like GitHub blue */
+    text-decoration: none; /* optional: cleaner look */
+}
+
+    .text a:hover {
+        text-decoration: underline; /* show underline on hover */
+    }
+/* Button beside header */
+.header-with-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.play-button-box {
+    background: #4da6ff;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    transition: background 0.3s;
+}
+
+    .play-button-box:hover {
+        background: #1a73e8;
+    }
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px; /* equal width and height */
+    height: 50px;
+    border-radius: 50%; /* makes it a circle */
+    background: #444;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    display: flex; /* center arrow inside */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+    .back-to-top:hover {
+        background: #666;
+    }
+
+
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #121212;
+    color: #bbbbbb;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+.audio-comparison {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: flex-end; /* align all items by bottom */
+    gap: 60px; /* spacing */
+    margin: 20px auto;
+    text-align: center;
+}
+
+.audio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .audio-item p {
+        margin-bottom: 8px; /* small spacing above audio bar */
+    }
+
+.arrow {
+    font-size: 3rem;
+    align-self: center; /* center arrow relative to the audio elements */
+    display: flex;
+    align-items: center; /* vertical centering inside */
+}
+
