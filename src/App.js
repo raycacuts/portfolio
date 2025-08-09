@@ -139,29 +139,31 @@ function App() {
 
                 <div className="subsection media-layout">
                     <div className="text">
-                        <h3>3D Game Development (Unity & Unreal Engine)</h3>
+                        <div className="header-with-button">
+                            <h3>TravelTrack Web App</h3>
+                            <a
+                                href="https://witty-dune-0cb8be810.2.azurestaticapps.net/"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="play-button-box"
+                            >
+                                Open App
+                            </a>
+                        </div>
                         <ul>
-                            <li>Developed first-person shooter and action (Souls-like) games using Unity (C#) and Unreal Engine
-                                (C++/Blueprints), featuring multi-level design, dynamic environments, and interactive gameplay elements.</li>
-                            <li>Implemented player abilities (combat, weapon switching, movement, dodge/jump), enemy AI with navigation and
-                                varied behaviors, and player-enemy combat interactions.</li>
-                            <li>Integrated animation montages, special effects (Unity particles, Unreal Niagara), MetaSounds, audio, and custom
-                                UI to deliver polished and immersive game experiences.</li>
-                            <li>Tech Stack: Unity, Unreal Engine, Visual Studio, C++, C#</li>
+                            <li>Built a full-stack travel logging web application with a React + Vite frontend and Node.js/Express backend, deployed on Azure Static Web Apps and Azure App Service.</li>
+                            <li>Implemented interactive maps using Leaflet to mark visited cities and planned destinations with visual travel lines.</li>
+                            <li>Added JWT-based authentication, secure API endpoints, and file uploads with Multer.</li>
+                            <li>Tech Stack: React, JavaScript, Leaflet, CSS Modules, Node.js, Express, MongoDB, Azure.</li>
                         </ul>
-                        <a href="https://github.com/raycacuts/FPSGame" target="_blank" rel="noreferrer">
-                            Unity FPS Game GitHub →
-                        </a>
-                        <a href="https://github.com/raycacuts/ActionGame" target="_blank" rel="noreferrer">
-                            Unreal Action Game GitHub →
+                        <a href="https://github.com/raycacuts/TravelTrack" target="_blank" rel="noreferrer">
+                            View on GitHub →
                         </a>
                     </div>
                     <div className="media-group">
-                        <img src="/images/fpsgame.png" alt="Unity FPS Game" className="media" />
-                        <img src="/images/actiongame.png" alt="Unreal Action Game" className="media" />
+                        <img src="/images/TravelTrack.png" alt="TravelTrack Web App" className="media" />
                     </div>
                 </div>
-
 
                 <div className="subsection media-layout">
                     <div className="text">
@@ -192,6 +194,32 @@ function App() {
                     </div>
                 </div>
 
+                
+
+                <div className="subsection media-layout">
+                    <div className="text">
+                        <h3>3D Game Development (Unity & Unreal Engine)</h3>
+                        <ul>
+                            <li>Developed first-person shooter and action (Souls-like) games using Unity (C#) and Unreal Engine
+                                (C++/Blueprints), featuring multi-level design, dynamic environments, and interactive gameplay elements.</li>
+                            <li>Implemented player abilities (combat, weapon switching, movement, dodge/jump), enemy AI with navigation and
+                                varied behaviors, and player-enemy combat interactions.</li>
+                            <li>Integrated animation montages, special effects (Unity particles, Unreal Niagara), MetaSounds, audio, and custom
+                                UI to deliver polished and immersive game experiences.</li>
+                            <li>Tech Stack: Unity, Unreal Engine, Visual Studio, C++, C#</li>
+                        </ul>
+                        <a href="https://github.com/raycacuts/FPSGame" target="_blank" rel="noreferrer">
+                            Unity FPS Game GitHub →
+                        </a>
+                        <a href="https://github.com/raycacuts/ActionGame" target="_blank" rel="noreferrer">
+                            Unreal Action Game GitHub →
+                        </a>
+                    </div>
+                    <div className="media-group">
+                        <img src="/images/fpsgame.png" alt="Unity FPS Game" className="media" />
+                        <img src="/images/actiongame.png" alt="Unreal Action Game" className="media" />
+                    </div>
+                </div>
 
                 <div className="subsection media-layout">
                     <div className="text">
