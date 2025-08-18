@@ -135,7 +135,14 @@ function App() {
 
             {/* Projects */}
 
-            <div className="subsection media-layout">
+            
+
+
+            <section id="projects" className="section">
+                <h2>Projects</h2>
+
+
+                <div className="subsection media-layout">
                 <div className="text">
                     <div className="header-with-button">
                         <h3>UseBy Mobile App</h3>
@@ -158,20 +165,16 @@ function App() {
  
                 </div>
                 <div className="media-group">
-    <img 
-        src="/images/useby.jpg" 
-        alt="UseBy Mobile App Screenshot" 
-        className="media" 
-        style={{ width: "50%", height: "auto" }} 
-    />
-</div>
+                    <img 
+                        src="/images/useby.jpg" 
+                        alt="UseBy Mobile App Screenshot" 
+                        className="media" 
+                        style={{ width: "50%", height: "auto" }} 
+                    />
+                </div>
 
             </div>
-
-
-            <section id="projects" className="section">
-                <h2>Projects</h2>
-
+            
                 <div className="subsection media-layout">
                     <div className="text">
                         <div className="header-with-button">
