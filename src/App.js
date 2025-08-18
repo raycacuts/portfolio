@@ -134,6 +134,41 @@ function App() {
             </section>
 
             {/* Projects */}
+
+            <div className="subsection media-layout">
+                <div className="text">
+                    <div className="header-with-button">
+                        <h3>UseBy Mobile App</h3>
+                        <a
+                            href="https://apps.apple.com/ca/app/useby/id6749925117"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="play-button-box"
+                        >
+                            View on App Store
+                        </a>
+                    </div>
+                    <ul>
+                        <li>Created and published <strong>UseBy</strong>, an iOS app that helps users track expiry dates for groceries, medicine, and cosmetics to reduce waste and save money.</li>
+                        <li>Implemented <strong>AI-powered scanning</strong> using Google Cloud Vision and OpenAI APIs to automatically detect product names and expiry/product dates.</li>
+                        <li>Built with <strong>React Native</strong> (JavaScript) and deployed backend on <strong>Google Cloud Platform (GCP)</strong> for scalable API integration.</li>
+                        <li>Features include smart scanning, expiry tracking, custom reminders, categories, and ad-based monetization with subscription upgrades.</li>
+                        <li>Tech Stack: React Native, JavaScript, Google Cloud Vision, OpenAI API, GCP, AdMob.</li>
+                    </ul>
+ 
+                </div>
+                <div className="media-group">
+    <img 
+        src="/images/useby.jpg" 
+        alt="UseBy Mobile App Screenshot" 
+        className="media" 
+        style={{ width: "50%", height: "auto" }} 
+    />
+</div>
+
+            </div>
+
+
             <section id="projects" className="section">
                 <h2>Projects</h2>
 
